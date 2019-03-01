@@ -22,7 +22,7 @@ def video(args):
     config = load_config(args)
     model = create_model(args, config)
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture('output.mp4')
     if cap.isOpened() is False:
         print('Error opening video stream or file')
         exit(1)
